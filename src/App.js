@@ -5,6 +5,11 @@ const API = {
   base: "https://api.openweathermap.org/data/2.5/"
 }
 function App() {
+
+  const dateBuilder = (d) => {
+    let months = []
+    let days = []
+  }
   return (
     <div className="app">
      <main>
@@ -15,6 +20,11 @@ function App() {
           placeholder="Search..."
           />
         </div> 
+        <div className="location-box">
+        <div className="location">New York City, US</div>
+        <div className="date">(dateBuilder(new Date()))</div>
+        </div>
+
      </main>
     </div>
   );
